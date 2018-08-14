@@ -1,6 +1,5 @@
 package appium.android.parallel.testcases;
 
-import java.io.File;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.MobileCapabilityType;
 import junit.framework.Assert;
 
 public class AndroidAppTest {
@@ -18,11 +16,14 @@ public class AndroidAppTest {
 	@BeforeTest
 	public void testMethod() {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "android");
-		capabilities.setCapability(MobileCapabilityType.APP, "/root/tmp/sample_apk_debug.apk");
+
+		capabilities.setCapability("platformVersion", "7.1.1");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("deviceName", "Android Emulator");
+		capabilities.setCapability("automationName", "UIAutomator2");
+		capabilities.setCapability("app", "/root/tmp/sample_apk_debug.apk");
+		capabilities.setCapability("browserName", "android");
+		capabilities.setCapability("avd", "nexus_5_7.1.1");
 
 		try {
 			driver = new AndroidDriver<>(new URL("http://127.0.0.1:4444/wd/hub"), capabilities);
