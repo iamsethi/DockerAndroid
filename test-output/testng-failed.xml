@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
-  <test thread-count="3" name="EmulatorSamsungMSiteChrome(failed)" parallel="tests">
-    <parameter name="platformVersion" value="7.1.1"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="deviceName" value="Android Emulator"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="appium.android.parallel.testcases.MSiteChromeTest">
+      <class name="appium.android.parallel.testcases.AndroidAppTest">
         <methods>
           <include name="searchForAppiumConf"/>
           <include name="testMethod"/>
         </methods>
-      </class> <!-- appium.android.parallel.testcases.MSiteChromeTest -->
+      </class> <!-- appium.android.parallel.testcases.AndroidAppTest -->
     </classes>
-  </test> <!-- EmulatorSamsungMSiteChrome(failed) -->
-</suite> <!-- Failed suite [Parallel TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

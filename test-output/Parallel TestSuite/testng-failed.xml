@@ -3,15 +3,15 @@
 <suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
   <test thread-count="3" name="EmulatorSamsungMSiteChrome(failed)" parallel="tests">
     <parameter name="platformVersion" value="7.1.1"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="browserName" value="android"/>
+    <parameter name="deviceName" value="Nexus 5"/>
     <classes>
-      <class name="appium.android.parallel.testcases.MSiteChromeTest">
+      <class name="appium.android.parallel.testcases.AndroidAppTest">
         <methods>
           <include name="searchForAppiumConf"/>
           <include name="testMethod"/>
         </methods>
-      </class> <!-- appium.android.parallel.testcases.MSiteChromeTest -->
+      </class> <!-- appium.android.parallel.testcases.AndroidAppTest -->
     </classes>
   </test> <!-- EmulatorSamsungMSiteChrome(failed) -->
 </suite> <!-- Failed suite [Parallel TestSuite] -->
