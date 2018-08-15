@@ -1,0 +1,33 @@
+# Note: It requires docker-compose 1.13.0
+#
+# Usage: docker-compose up -d
+version: "2.2"
+
+services:
+  # Selenium hub
+  selenium_hub:
+    image: selenium/hub:3.12.0-americium
+    ports:
+      - 4444:4444
+
+  # Docker-Android for Android application testing
+  nexus_7.1.1:
+    image: butomo1989/docker-android-x86-7.1.1
+    privileged: true
+    # Increase scale number if needed
+    scale: 1
+    depends_on:
+      - selenium_hub
+    ports:
+      - 6080
+    # Change path of apk that you want to test. I use sample_apk that I provide in folder "example"
+    volumes:
+      - ~/desktop/example/sample_apk:/root/tmp/sample_apk
+      - ./video-nexus_7.1.1:/tmp/video
+    environment:
+      - DEVICE=Nexus 5
+      - CONNECT_TO_GRID=true
+      - APPIUM=true
+      - SELENIUM_HOST=selenium_hub
+      - AUTO_RECORD=true
+

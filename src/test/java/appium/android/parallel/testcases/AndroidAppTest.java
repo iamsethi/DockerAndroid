@@ -21,7 +21,7 @@ public class AndroidAppTest {
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "Android Emulator");
 		capabilities.setCapability("automationName", "UIAutomator2");
-		capabilities.setCapability("app", "/root/tmp/sample_apk_debug.apk");
+		capabilities.setCapability("app", "/root/tmp/sample_apk/sample_apk_debug.apk");
 		capabilities.setCapability("browserName", "android");
 		capabilities.setCapability("avd", "nexus_5_7.1.1");
 
