@@ -20,7 +20,7 @@ public class MSiteChromeTest {
 	public void testMethod() {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability("platformVersion", "7.1.1");
+		capabilities.setCapability("platformVersion", "8.1");
 		capabilities.setCapability("deviceName", "Android Emulator");
 		capabilities.setCapability("browserName", "chrome");
 
