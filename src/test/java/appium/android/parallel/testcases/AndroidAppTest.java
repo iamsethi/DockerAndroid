@@ -1,47 +1,48 @@
 package appium.android.parallel.testcases;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import junit.framework.Assert;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 
 public class AndroidAppTest {
 	public AndroidDriver<AndroidElement> driver;
 
 	@BeforeTest
-	public void testMethod() {
+	public void setUp() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("platformVersion", "7.1.1");
-		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "Android Emulator");
-		capabilities.setCapability("automationName", "UIAutomator2");
-		capabilities.setCapability("app", "/root/tmp/sample_apk/sample_apk_debug.apk");
-		capabilities.setCapability("browserName", "android");
-		capabilities.setCapability("avd", "nexus_5_7.1.1");
+		capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME, "android");
 
-		try {
-			driver = new AndroidDriver<>(new URL("http://127.0.0.1:4444/wd/hub"), capabilities);
-			driver.findElementById("android.widget.Button").isDisplayed();
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.android.apis");
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
+				"com.example.android.apis.app.AlertDialogSamples");
 
-			driver.findElementById("first_input").sendKeys(Integer.toString(3));
-			driver.findElementById("second_input").sendKeys(Integer.toString(7));
-			driver.findElementById("btn_calculate").click();
-
-			Assert.assertEquals(driver.findElementById("result").getText(), "10");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4444/wd/hub"), capabilities);
 
 	}
 
 	@Test
-	public void searchForAppiumConf() {
+	public void testApp() {
+		WebDriverWait wdw = new WebDriverWait(driver, 30);
+//		wdw.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.id("io.appium.android.apis:id/two_buttons")))
+//				.click();
+
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 
 	}
 

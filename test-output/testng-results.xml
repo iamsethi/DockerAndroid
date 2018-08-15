@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9417" started-at="2018-08-15T07:09:51Z" finished-at="2018-08-15T07:10:00Z">
+  <suite name="Default suite" duration-ms="43803" started-at="2018-08-15T15:10:15Z" finished-at="2018-08-15T15:10:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9417" started-at="2018-08-15T07:09:51Z" finished-at="2018-08-15T07:10:00Z">
+    <test name="Default test" duration-ms="43803" started-at="2018-08-15T15:10:15Z" finished-at="2018-08-15T15:10:59Z">
       <class name="appium.android.parallel.testcases.AndroidAppTest">
-        <test-method status="PASS" signature="testMethod()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@13eb8acf]" name="testMethod" is-config="true" duration-ms="8919" started-at="2018-08-15T07:09:51Z" finished-at="2018-08-15T07:10:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@17d0685f]" name="setUp" is-config="true" duration-ms="26208" started-at="2018-08-15T15:10:15Z" finished-at="2018-08-15T15:10:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="searchForAppiumConf()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@13eb8acf]" name="searchForAppiumConf" duration-ms="264" started-at="2018-08-15T07:10:00Z" finished-at="2018-08-15T07:10:00Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testApp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@17d0685f]" name="testApp" duration-ms="38" started-at="2018-08-15T15:10:41Z" finished-at="2018-08-15T15:10:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchForAppiumConf -->
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@17d0685f]" name="tearDown" is-config="true" duration-ms="17408" started-at="2018-08-15T15:10:41Z" finished-at="2018-08-15T15:10:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- appium.android.parallel.testcases.AndroidAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
