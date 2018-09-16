@@ -20,7 +20,7 @@ public class AndroidAppTest {
 	public void setUp() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		capabilities.setCapability("platformVersion", "7.1.1");
+		capabilities.setCapability("platformVersion", "8.1");
 		capabilities.setCapability("deviceName", "Android Emulator");
 		capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME, "android");
 

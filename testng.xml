@@ -1,16 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel TestSuite" parallel="tests" thread-count="3">
 	<test name="EmulatorAppTest">
-		<parameter name="platformVersion" value="7.1.1"></parameter>
-		<parameter name="deviceName" value="Nexus 5"></parameter>
+		<parameter name="platformVersion" value="8.1"></parameter>
+		<parameter name="deviceName" value="Nexus S"></parameter>
 		<parameter name="browserName" value="android"></parameter>
 		<classes>
 			<class name="appium.android.parallel.testcases.AndroidAppTest"></class>
 		</classes>
 	</test>
 	<test name="EmulatorChromeTest">
-		<parameter name="platformVersion" value="7.1.1"></parameter>
-		<parameter name="deviceName" value="Nexus 5"></parameter>
+		<parameter name="platformVersion" value="8.1"></parameter>
+		<parameter name="deviceName" value="Nexus S"></parameter>
 		<parameter name="browserName" value="android"></parameter>
 		<classes>
 			<class name="appium.android.parallel.testcases.MSiteChromeTest"></class>
