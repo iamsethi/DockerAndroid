@@ -21,8 +21,8 @@ services:
     ports:
       - 6080
     volumes:
-      - C:/Users/ketan.sethi/Desktop:/root/tmp
-      - C:/Users/ketan.sethi/Desktop/video-nexus_8.1:/tmp/video
+      - ~/desktop/example/appFolder:/root/tmp
+      - ./video-nexus_8.1:/tmp/video
     environment:
       - DEVICE=Nexus S
       - CONNECT_TO_GRID=true
