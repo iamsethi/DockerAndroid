@@ -2,19 +2,19 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="145313" started-at="2018-09-19T07:21:44Z" finished-at="2018-09-19T07:24:10Z">
+  <suite name="Default suite" duration-ms="12473" started-at="2018-09-19T07:55:10Z" finished-at="2018-09-19T07:55:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="145313" started-at="2018-09-19T07:21:44Z" finished-at="2018-09-19T07:24:10Z">
+    <test name="Default test" duration-ms="12473" started-at="2018-09-19T07:55:10Z" finished-at="2018-09-19T07:55:22Z">
       <class name="appium.android.parallel.testcases.AndroidAppTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="setUp" is-config="true" duration-ms="145127" started-at="2018-09-19T07:21:44Z" finished-at="2018-09-19T07:24:09Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="setUp" is-config="true" duration-ms="12247" started-at="2018-09-19T07:55:10Z" finished-at="2018-09-19T07:55:22Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
 System info: host: 'ketan-Inspiron-3521', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-33-generic', java.version: '1.8.0_181'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
     at getResponseForW3CError (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:824:9)
     at asyncHandler$ (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:375:37)
     at tryCatch (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
@@ -23,11 +23,11 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
     at GeneratorFunctionPrototype.invoke (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:136:37)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
 System info: host: 'ketan-Inspiron-3521', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-33-generic', java.version: '1.8.0_181'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
     at getResponseForW3CError (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:824:9)
     at asyncHandler$ (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:375:37)
     at tryCatch (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
@@ -95,14 +95,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testApp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="testApp" duration-ms="0" started-at="2018-09-19T07:24:10Z" finished-at="2018-09-19T07:24:10Z">
+        <test-method status="SKIP" signature="testApp()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="testApp" duration-ms="0" started-at="2018-09-19T07:55:22Z" finished-at="2018-09-19T07:55:22Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
 System info: host: 'ketan-Inspiron-3521', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-33-generic', java.version: '1.8.0_181'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
     at getResponseForW3CError (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:824:9)
     at asyncHandler$ (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:375:37)
     at tryCatch (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
@@ -111,11 +111,11 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
     at GeneratorFunctionPrototype.invoke (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:136:37)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
 Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
 System info: host: 'ketan-Inspiron-3521', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-33-generic', java.version: '1.8.0_181'
 Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/root/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.example.android.apis' timed out after 20000ms'; Stderr: ''; Code: 'null'
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at '/root/tmp/sample_apk/apiDemos-debug.apk' does not exist or is not accessible
     at getResponseForW3CError (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:824:9)
     at asyncHandler$ (/usr/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:375:37)
     at tryCatch (/usr/lib/node_modules/appium/node_modules/babel-runtime/regenerator/runtime.js:67:40)
@@ -183,7 +183,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-19T07:24:10Z" finished-at="2018-09-19T07:24:10Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:appium.android.parallel.testcases.AndroidAppTest@51c8530f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-19T07:55:22Z" finished-at="2018-09-19T07:55:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

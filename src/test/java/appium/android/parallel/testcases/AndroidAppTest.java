@@ -23,8 +23,8 @@ public class AndroidAppTest {
 
 		capabilities.setCapability("platformVersion", "7.1.1");
 		capabilities.setCapability("deviceName", "nexus_5_7.1.1");
-//		capabilities.setCapability(MobileCapabilityType.APP,
-//				new File("/root/tmp/sample_apk/apiDemos-debug.apk").getAbsolutePath());
+		capabilities.setCapability(MobileCapabilityType.APP,
+				new File("/root/tmp/apiDemos-debug.apk").getAbsolutePath());
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.android.apis");
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
 				"com.example.android.apis.app.AlertDialogSamples");
