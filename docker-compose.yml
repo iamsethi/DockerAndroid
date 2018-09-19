@@ -10,57 +10,42 @@ services:
     ports:
       - 4444:4444
 
-<<<<<<< HEAD
 
 
   # Docker-Android for Android application testing
   nexus_7.1.1:
     image: butomo1989/docker-android-x86-7.1.1
-=======
-   # Docker-Android for Android application testing
-  nexus_8.1:
-    image: butomo1989/docker-android-x86-8.1
->>>>>>> branch 'master' of https://github.com/iamsethi/DockerAndroid.git
     privileged: true
     # Increase scale number if needed
     scale: 1
     depends_on:
       - selenium_hub
-      - real_device
     ports:
       - 6080
+    # Change path of apk that you want to test. I use sample_apk that I provide in folder "example"
     volumes:
-<<<<<<< HEAD
-      - ~/desktop/example/appFolder:/root/tmp/sample_apk
+      - ~/desktop/appFolder:/root/tmp/sample_apk
       - ./video-nexus_7.1.1:/tmp/video
-=======
-      - ~/desktop/example/appFolder:/root/tmp
-      - ./video-nexus_8.1:/tmp/video
->>>>>>> branch 'master' of https://github.com/iamsethi/DockerAndroid.git
     environment:
-      - DEVICE=Nexus S
+      - DEVICE=Nexus 5
       - CONNECT_TO_GRID=true
       - APPIUM=true
       - SELENIUM_HOST=selenium_hub
       - AUTO_RECORD=true
 
-<<<<<<< HEAD
   # Docker-Android for mobile website testing with chrome browser
   # Chrome browser exists only for version 7.0 and 7.1.1
   samsung_galaxy_web_7.1.1:
-=======
-  samsung_galaxy_web_8.1:
->>>>>>> branch 'master' of https://github.com/iamsethi/DockerAndroid.git
     image: butomo1989/docker-android-x86-8.1
     privileged: true
+    # Increase scale number if needed
     scale: 1
     depends_on: 
       - selenium_hub
-      - real_device
     ports:
       - 6080
     volumes:
-      - ./video-samsung_8.1:/tmp/video
+      - ./video-samsung_7.1.1:/tmp/video
     environment:
       - DEVICE=Samsung Galaxy S6
       - CONNECT_TO_GRID=true

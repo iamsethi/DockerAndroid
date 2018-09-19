@@ -21,7 +21,7 @@ public class MSiteChromeTest {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("platformVersion", "8.1");
-		capabilities.setCapability("deviceName", "Android Emulator");
+		capabilities.setCapability("deviceName", "samsung_galaxy_s6_8.1");
 		capabilities.setCapability("browserName", "chrome");
 
 		try {
