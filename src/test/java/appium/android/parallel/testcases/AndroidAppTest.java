@@ -4,7 +4,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,7 +21,8 @@ public class AndroidAppTest {
 
 		capabilities.setCapability("platformVersion", "7.1.1");
 		capabilities.setCapability("deviceName", "nexus_5_7.1.1");
-	//	capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME, "android");
+		// capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME,
+		// "android");
 
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.android.apis");
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
@@ -34,7 +34,7 @@ public class AndroidAppTest {
 
 	@Test
 	public void testApp() {
-		WebDriverWait wdw = new WebDriverWait(driver, 30);
+		// WebDriverWait wdw = new WebDriverWait(driver, 30);
 //		wdw.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.id("io.appium.android.apis:id/two_buttons")))
 //				.click();
 
