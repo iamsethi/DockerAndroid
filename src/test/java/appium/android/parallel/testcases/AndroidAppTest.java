@@ -21,8 +21,8 @@ public class AndroidAppTest {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("platformVersion", "7.1.1");
-		capabilities.setCapability("deviceName", "Android Emulator");
-		capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME, "android");
+		capabilities.setCapability("deviceName", "nexus_5_7.1.1");
+	//	capabilities.setCapability(AndroidMobileCapabilityType.BROWSER_NAME, "android");
 
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.android.apis");
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,

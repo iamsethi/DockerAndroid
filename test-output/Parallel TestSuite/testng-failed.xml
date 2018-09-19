@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
-  <test thread-count="3" name="EmulatorSamsungMSiteChrome(failed)" parallel="tests">
+  <test thread-count="3" name="EmulatorAppTest(failed)" parallel="tests">
     <parameter name="platformVersion" value="7.1.1"/>
     <parameter name="browserName" value="android"/>
     <parameter name="deviceName" value="Nexus 5"/>
     <classes>
       <class name="appium.android.parallel.testcases.AndroidAppTest">
         <methods>
-          <include name="searchForAppiumConf"/>
-          <include name="testMethod"/>
+          <include name="testApp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- appium.android.parallel.testcases.AndroidAppTest -->
     </classes>
-  </test> <!-- EmulatorSamsungMSiteChrome(failed) -->
+  </test> <!-- EmulatorAppTest(failed) -->
+  <test thread-count="3" name="EmulatorChromeTest(failed)" parallel="tests">
+    <parameter name="platformVersion" value="7.1.1"/>
+    <parameter name="browserName" value="android"/>
+    <parameter name="deviceName" value="Nexus 5"/>
+    <classes>
+      <class name="appium.android.parallel.testcases.MSiteChromeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testMethod"/>
+          <include name="testApp"/>
+        </methods>
+      </class> <!-- appium.android.parallel.testcases.MSiteChromeTest -->
+    </classes>
+  </test> <!-- EmulatorChromeTest(failed) -->
 </suite> <!-- Failed suite [Parallel TestSuite] -->
